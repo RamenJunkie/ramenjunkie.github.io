@@ -8,6 +8,7 @@ body {
 
 p {
     font-family: 'Mochiy Pop One', sans-serif;
+    margin: 10px auto 10px auto;
 }
 
 hr {
@@ -15,23 +16,32 @@ hr {
     border-style: dotted none none none;
     border-color: #4C6793;
     border-width: 10px;
+    margin: 75px auto 75px auto;
 }
 
 h1 {
     color: #594545;
     font-family: "Sacramento", "Papyrus", cursive;
-    margin-top: 0px;
-    font-size: 500%;
+    margin: 50px auto 0px auto;
+    font-size: 5rem;
+    line-height: 2;
+}
+
+h2 {
+    color: #594545;
+    font-size: 2.5rem;
+    font-family: 'Alkalami', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    margin: 0px auto 20px auto;
 }
 
 h3 {
     color: #4C6793;
 }
 
-/* Class Selector Can be Used Over and Over*/
-
-.footer_hr {
-    
+table {
+    margin: 25px auto 25px auto;
+    width: 50%;
 }
 
 /* Circular Images */
@@ -55,29 +65,25 @@ h3 {
 
 .navbar {
     position: fixed;
+    padding-top: 20px;
+    padding-bottom: 20px;
     top: 0;
-    height: 50px;
+    height: 25px;
     width: 100%;  
     background-color: #87A2FB;
     text-align: right;
     z-index: 9000;
 }
 
-.mid_box {
-    height: 200px;
-    width: 200px;
-    background-color: blue;
+.profile {
+    width: 50%;
+    margin: 0 auto 0 auto;
 }
 
-.bot_box {
-    height:200px;
-    width: 200px;
-    background-color: red;
-}
-
-.subtitle {
-    color: #594545;
-    font-family: 'Alkalami', Helvetica, Arial, sans-serif;
+.bottom-container {
+    margin-top: 30px;
+    background-color: #AAC4FF;
+    padding: 20px;
 }
 
 .skill_icon {
@@ -85,23 +91,36 @@ h3 {
     width: 100px;
 }
 
-.name {
+.social_butt {
+    width: 40px;
+    border-radius: 25%;
+}
 
+.skill-row {
+    width: 50%;
+    margin: 25px auto 100px auto;
+}
 
+.sicon1 {
+    float: left;
+}
+
+.sicon2 {
+    float: right;
 }
 
 .cloud1 {
     display: inline-block;
     position: absolute;
-    left: 900px;
-    top:100px
+    left: 950px;
+    top:150px
 
 }
 .cloud2 {
     display: inline-block;
     position: absolute;
-    left: 400px;
-    top: 200px
+    left: 300px;
+    top: 250px
 }
 
 .mountain {
@@ -109,10 +128,56 @@ h3 {
 
 }
 
-/* Peudo Classes 
+.btn {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
 
-img:hover {
-    background-color: red;
-}
-
-*/
+  .btn-top {
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+  }
+  
+  .btn-top:hover {
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+    background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+    text-decoration: none;
+  }
