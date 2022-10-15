@@ -2,6 +2,12 @@
 
 body {
     background-color: #D2DAFF;
+     margin: 0px;
+     text-align: center;
+}
+
+p {
+    font-family: 'Mochiy Pop One', sans-serif;
 }
 
 hr {
@@ -13,7 +19,9 @@ hr {
 
 h1 {
     color: #594545;
-    font-family: "Papyrus";
+    font-family: "Sacramento", "Papyrus", cursive;
+    margin-top: 0px;
+    font-size: 500%;
 }
 
 h3 {
@@ -31,14 +39,75 @@ h3 {
     border-radius: 100%;
 }
 
-/* ID Selectors are Unique per page*/
+.top_box {
+    position: relative;
+    padding-top: 100px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    /*background-image: url("/images/bg01.jpg");
+    background-repeat:no-repeat;
+    background-size:contain;*/
+    background-color: #87A2FB;
 
-#footer_hr {
-    border-style: dashed none none none;
 }
 
-/* Both override the basic CSS */
-/* IDs are recomended against being used */
+.navbar {
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;  
+    background-color: #87A2FB;
+    text-align: right;
+    z-index: 9000;
+}
+
+.mid_box {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+
+.bot_box {
+    height:200px;
+    width: 200px;
+    background-color: red;
+}
+
+.subtitle {
+    color: #594545;
+    font-family: 'Alkalami', Helvetica, Arial, sans-serif;
+}
+
+.skill_icon {
+    border-radius: 25%;
+    width: 100px;
+}
+
+.name {
+
+
+}
+
+.cloud1 {
+    display: inline-block;
+    position: absolute;
+    left: 900px;
+    top:100px
+
+}
+.cloud2 {
+    display: inline-block;
+    position: absolute;
+    left: 400px;
+    top: 200px
+}
+
+.mountain {
+    
+
+}
 
 /* Peudo Classes 
 
