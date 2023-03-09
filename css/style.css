@@ -1,7 +1,7 @@
 /* Tag Selectors */
 
 body {
-    background-color: #D2DAFF;
+    background-color: #FCE0D1   ;
      margin: 0px;
      text-align: center;
 }
@@ -51,26 +51,32 @@ table {
 
 .top_box {
     position: relative;
-    padding-top: 100px;
+    padding-top: 200px;
     width: 100%;
     text-align: center;
     padding-bottom: 0px;
     margin-bottom: 0px;
-    /*background-image: url("/images/bg01.jpg");
+    background-image: url("../images/bg01.jpg"); no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 700px;
+    /* background-image: url("/images/eclipse.jpg");
     background-repeat:no-repeat;
-    background-size:contain;*/
-    background-color: #87A2FB;
+    background-size:contain; */
+    /* background-color: #87A2FB; */
 
 }
 
 .navbar {
     position: fixed;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
     top: 0;
-    height: 25px;
+    height: 30px;
     width: 100%;  
-    background-color: #87A2FB;
+    background-color: #F8AF86;
     text-align: right;
     z-index: 9000;
 }
@@ -82,7 +88,7 @@ table {
 
 .bottom-container {
     margin-top: 30px;
-    background-color: #AAC4FF;
+    background-color: #F8AF86;
     padding: 20px;
 }
 
