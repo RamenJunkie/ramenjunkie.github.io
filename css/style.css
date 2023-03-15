@@ -104,6 +104,8 @@ table {
 .feature_icon {
     border-radius: 25%;
     width: 200px;
+    height: 100px;
+    background-size: cover;
 }
 
 .skill_icon {
