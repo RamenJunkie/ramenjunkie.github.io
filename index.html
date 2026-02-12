@@ -1,106 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Josh's Personal Website</title>
-
-        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-        <link rel="manifest" href="favicons/site.webmanifest">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Mochiy+Pop+One&family=Sacramento&display=swap" rel="stylesheet"> 
-        
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-        <!--Bootstrap Icons-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-        <!--  Google Fonts-->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-        <!--Bootstrap JS-->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-          crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-          crossorigin="anonymous"></script>
-
-        <link rel="stylesheet" href="css/style.css">
+        <link href="/css/style.css" rel="stylesheet">
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
+        <link rel="shortcut icon" href="/images/favicon.png" type="image/webp">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicon.png">
+        <link rel="icon" href="/images/favicon.png" type="image/webp">
+        <title>Josh Landing</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
     </head>
-
-
     <body>
-        <div class="navbar">
-          <a class="btn-top" href="index.html">Home</a>  <a class="btn-top" href="projects.html">Code Projects</a>  <a class="btn-top" href="skills.html">Professional Skills and Experience</a>
+        <!-- Snowfall Background Animation -->
+        <section class="animated-background">
+            <div id="stars1"></div>
+            <div id="stars2"></div>
+            <div id="stars3"></div>
+        </section>
+        <!-- End of Snowfall Background Animation -->
+
+        <div class="min-h-full flex-h-center" id="background_div">
+            <input type="hidden" value="https://bio.link" id="app-url">
+                <input type="hidden" value="null" id="is-featured">
+                    <canvas id="bg-canvas" class="background-overlay"></canvas>
+                </input>
+            </input>
+
+            <div class="mt-48 page-full-wrap relative">
+                <input type="hidden" value="creator-page" id="page-type">
+                <img class="display-image m-auto" data-src="/images/logo.png" src="/images/logo.png" alt="Landing logo"/>
+                <h2 class="page-title page-text-color page-text-font mt-16 text-center">Josh Miller aka Ramen Junkie</h2>
+
+                <div class="mt-24">
+                        <div class="page-item-wrap relative">
+                            <div class="page-item flex-both-center absolute"></div>
+                            <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://github.com/RamenJunkie" data-id="261685" data-type="page_item">
+                                <img class="link-each-image" data-src="images/GitHub.png" src="images/GitHub.png" alt="GitHub"/>
+                                <span class="item-title text-center">GitHub</span>
+                            </a>
+                        </div>                        
+                        <div class="page-item-wrap relative">
+                            <div class="page-item flex-both-center absolute"></div>
+                            <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://www.lameazoid.com/" data-id="261685" data-type="page_item">
+                                <img class="link-each-image" data-src="images/Lameazoid.png" src="images/Instagram.png" alt="Lameazoid"/>
+                                <span class="item-title text-center">Blog</span>
+                            </a>
+                        </div>                
+                        <div class="page-item-wrap relative">
+                            <div class="page-item flex-both-center absolute"></div>
+                            <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://bsky.app/profile/ramenjunkie.bsky.social" data-id="261685" data-type="page_item">
+                                <img class="link-each-image" data-src="images/BlueSky.png" src="images/BlueSky.png" alt="Bluesky"/>
+                                <span class="item-title text-center">BlueSky</span>
+                            </a>
+                        </div>  
+                        <div class="page-item-wrap relative">
+                            <div class="page-item flex-both-center absolute"></div>
+                            <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://retro.pizza/@ramenjunkie" data-id="261685" data-type="page_item">
+                                <img class="link-each-image" data-src="images/Mastodon.png" src="images/Mastodon.png" alt="Mastodon"/>
+                                <span class="item-title text-center">Mastodon</span>
+                            </a>
+                        </div>  
+                        <div class="page-item-wrap relative">
+                            <div class="page-item flex-both-center absolute"></div>
+                            <a target="_blank" class="page-item-each py-10 flex-both-center" href="https://www.youtube.com/@RamenJunkie" data-id="261685" data-type="page_item">
+                                <img class="link-each-image" data-src="images/YouTube.jpeg" src="images/YouTube.jpeg" alt="Youtube"/>
+                                <span class="item-title text-center">Youtube</span>
+                            </a>
+                        </div>
+                        </div>
+            </div>
         </div>
-
-        <div class="top_box">
-                <!-- <img class="cloud1" src="images/cloud.png" alt="happy little cloud"> -->
-                <div class="name">
-                    <h1>Josh Miller</h1>
-                    <h2>Coder, Gamer, Writer</h2>
-                </div>
-                <div class="profile">
-                  <img class="headshot" src="images/headshot200x200.png" width="200" alt="josh headshot">
-                  <p>I've been around on the web through various forums and websites since the 90s. I've used computers and played games essentilly my entire life since the early 80s. I am an avid Technology Enthusiast and work to keep knowledgeable on current technology as much as possible.</p>
-                </div>
-                <!-- <img class="cloud2" src="images/cloud.png" alt="happy little cloud">
-            <img class="mountain" src="images/mountain.png" alt="riiiiseee mountain"> -->
-
-        </div>
-        <div class="middle-container">
-            <div class="skills">
-              <h2>My Blogs</h2>
-              <div class="skill-row">
-                <a href="https://www.bloggingintensifies.com"><img class="blog_icon sicon1" src="images/bisquare.png" alt="Blogging Intensifies"></a>
-                <h3>[Blogging Intensifies]</h3>
-                <p>Personal blog, for code talk, music, personal opinions and general life.</p>
-              </div>
-              <div class="skill-row">
-                <a href="https://www.lameazoid.com"><img class="blog_icon sicon2" src="images/lame_fb_box.png" alt="Lameazoid"></a>
-                <h3>Lameazoid.com</h3>
-                <p>Geek Blog, commentary and reviews of toys, video games, movies, and other related topics.</p>
-              </div>
-            </div>
-            <hr>
-            <div class="hosted container-fluid">
-              <h2><a href="projects.html">Project Showcase</a></h2>
-              <p>A collection of code project samples and code in several different coding languages.</p>
-            </div>
-            <hr>
-            <div class="skills">
-              <h2>My Skills</h2>
-              <div class="skill-row">
-                <img class="skill_icon sicon1" src="images/computer.png" alt="Python Logo">
-                <h3>Development</h3>
-                <p>Experience with a variety of coding languages including Python, HTML/CSS, PHP, SQL, Cold Fusion, Bash Scripting, and Linden Scripting Language.</p>
-              </div>
-              <div class="skill-row">
-                <img class="skill_icon sicon2" src="images/camera.png" alt="Computer Icon">
-                <h3>Design</h3>
-                <p>Design skills including photography, Photoshop, video creation, and graphic design.</p>
-              </div>
-            </div>
-            <hr>
-            <div class="contact-me">
-              <h3>Get In Touch.</h3>
-              <a class="btn" href="mailto:josh_miller79@outlook.com">CONTACT ME</a>
-            </div>
-          </div>
-          </div>
-
-
-         
-          <div class="bottom-container">
-            <a class="footer-link" href="https://github.com/ramenjunkie"><img class="social_butt" src="images/github_PNG40.png" alt="Github"></a>
-            <a class="footer-link" href="http://www.linkedin.com/in/joshmiller79"><img class="social_butt" src="images/LinkedIn_logo_initials.png" alt="LinkedIn"></a>
-            <a class="footer-link" href="https://retro.pizza/@ramenjunkie"><img class="social_butt" src="images/mastodon-logo.jpg" alt="Mastodon"></a>
-            <a class="footer-link" href="https://www.bloggingintensifies.com/"><img class="social_butt" src="images/bisquare.png" alt="Website"></a>
-            <p>© 2022 Josh Miller.</p>
-            <p style="font-size: 8px;">Icon made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a href="www.flaticon.com">www.flaticon.com</a></p>
-          </div>
-
     </body>
+
+    <!-- A different snowfall -->
+    <!-- <script src="/js/snowfall.js"></script> -->
 </html>
