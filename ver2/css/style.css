@@ -1,0 +1,49 @@
+/* Tag Selectors */
+
+body {
+    background-color: #D2DAFF;
+}
+
+hr {
+    width: 50%;
+    border-style: dotted none none none;
+    border-color: #4C6793;
+    border-width: 10px;
+}
+
+h1 {
+    color: #594545;
+    font-family: "Papyrus";
+}
+
+h3 {
+    color: #4C6793;
+}
+
+/* Class Selector Can be Used Over and Over*/
+
+.footer_hr {
+    
+}
+
+/* Circular Images */
+.circular {
+    border-radius: 100%;
+}
+
+/* ID Selectors are Unique per page*/
+
+#footer_hr {
+    border-style: dashed none none none;
+}
+
+/* Both override the basic CSS */
+/* IDs are recomended against being used */
+
+/* Peudo Classes 
+
+img:hover {
+    background-color: red;
+}
+
+*/
